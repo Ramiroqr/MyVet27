@@ -25,6 +25,9 @@ namespace MyVet.Web.Helpers
         Task LogoutAsync();
 
         Task<bool> DeleteUserAsync(string email);
+
+        //verifica si la combinacion de user y password son validos
+        Task<SignInResult> ValidatePasswordAsync(User user, string password);
     }
 }
 
