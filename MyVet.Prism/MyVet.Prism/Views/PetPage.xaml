@@ -6,7 +6,8 @@
              x:Class="MyVet.Prism.Views.PetPage"
              Title="{Binding Title}">
 
-    <StackLayout
+    <ScrollView>
+        <StackLayout
         Padding="10">
         <Image
             HeightRequest="250"
@@ -38,49 +39,50 @@
             <Label 
                 Grid.Column="0"
                 Grid.Row="1"
+                FontAttributes="Bold"
                 Text="Race">
             </Label>
             <Label
                 Grid.Column="1"
                 Grid.Row="1"
-                FontAttributes="Bold"
                 Text="{Binding Pet.Race}">
             </Label>
             <Label 
                 Grid.Column="0"
                 Grid.Row="2"
+                FontAttributes="Bold"
                 Text="Born">
             </Label>
             <Label
                 Grid.Column="1"
                 Grid.Row="2"
-                FontAttributes="Bold"
                 Text="{Binding Pet.Born, StringFormat='{0:yyyy/MM/dd}'}">
             </Label>
             <Label 
                 Grid.Column="0"
                 Grid.Row="3"
+                FontAttributes="Bold"
                 Text="Pet Type">
             </Label>
             <Label
                 Grid.Column="1"
                 Grid.Row="3"
-                FontAttributes="Bold"
                 Text="{Binding Pet.PetType}">
             </Label>
             <Label 
                 Grid.Column="0"
                 Grid.Row="4"
+                FontAttributes="Bold"
                 Text="Remarks">
             </Label>
             <Label
                 Grid.Column="1"
                 Grid.Row="4"
-                FontAttributes="Bold"
                 Text="{Binding Pet.Remarks}">
             </Label>
         </Grid>
         
     </StackLayout>
-  
+    </ScrollView>
+
 </ContentPage>

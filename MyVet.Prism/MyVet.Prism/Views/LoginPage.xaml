@@ -6,7 +6,8 @@
              x:Class="MyVet.Prism.Views.LoginPage"
              Title="{Binding Title}">
 
-    <StackLayout
+    <ScrollView>
+        <StackLayout
         Padding="10">
         <Label
             Text="Email">
@@ -39,5 +40,5 @@
             
         </Button>
     </StackLayout>
-  
+    </ScrollView>
 </ContentPage>
