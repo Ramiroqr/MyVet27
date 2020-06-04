@@ -22,8 +22,10 @@ namespace MyVet.Prism.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjY3NDM5QDMxMzgyZTMxMmUzMGdoMHFRcjQvQ2Z2TjRjcEVtZkdoMXFxaEFVeGNEZE5CaVVQQVNkMlVBdm89");
             global::Xamarin.Forms.Forms.Init();
-            new SfBusyIndicatorRenderer();
+            //new SfBusyIndicatorRenderer();
 
             LoadApplication(new App(new iOSInitializer()));
 

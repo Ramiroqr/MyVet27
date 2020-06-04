@@ -12,6 +12,8 @@ namespace MyVet.Prism.Droid
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("MjY3NDM5QDMxMzgyZTMxMmUzMGdoMHFRcjQvQ2Z2TjRjcEVtZkdoMXFxaEFVeGNEZE5CaVVQQVNkMlVBdm89");
+
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
@@ -19,7 +21,7 @@ namespace MyVet.Prism.Droid
 
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
-            new SfBusyIndicatorRenderer();
+            //new SfBusyIndicatorRenderer();
 
             LoadApplication(new App(new AndroidInitializer()));
         }
