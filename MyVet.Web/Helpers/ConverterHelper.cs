@@ -80,7 +80,7 @@ namespace MyVet.Web.Helpers
                 PetId = history.Pet.Id,
                 Remarks = history.Remarks,
                 ServiceTypeId = history.ServiceType.Id,
-                ServiceTypes = _combosHelper.GetComboServiceType(),
+                ServiceTypes = _combosHelper.GetComboServiceTypes(),
             };
         }
     }

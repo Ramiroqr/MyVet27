@@ -31,7 +31,7 @@ namespace MyVet.Web.Data
             await CheckOwnerAsync(customer);
             await CheckManagerAsync(manager);
             await CheckPetsAsync();
-            await CheckAgendasAsync();
+            //await CheckAgendasAsync();
         }
 
         private async Task CheckRoles()
@@ -58,6 +58,10 @@ namespace MyVet.Web.Data
 
                 await _userHelper.AddUserAsync(user, "123456");
                 await _userHelper.AddUserToRoleAsync(user, role);
+
+                var token = await _userHelper.GenerateEmailConfirmationTokenAsync(user);
+                await _userHelper.ConfirmEmailAsync(user, token);
+
             }
 
             return user;
